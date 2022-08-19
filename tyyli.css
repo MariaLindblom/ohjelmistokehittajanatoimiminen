@@ -5,7 +5,7 @@ body, html {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2273/sport-tennis-old-net.jpg?auto=compress&cs=tinysrgb&w=1600");
 
-  height: 50%;
+  height: 70%;
 
   background-position: center;
   background-repeat: no-repeat;
