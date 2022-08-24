@@ -1,2 +1,2 @@
 # ohjelmistokehittajanatoimiminen
-Nettisivujen teossa käytetään bootstrap:piä.
+Nettisivujen interaktiviiden teossa käytetään bootstrap:piä.
