@@ -1,6 +1,12 @@
 # ohjelmistokehittajanatoimiminen
 Nettisivujen interaktiviiden teossa käytetään bootstrap:piä.
 
+Perusjutut:
+
+- header ja footer joka sivulle.
+- muokata sivua css ja hyödyntää bootstrap.
+- testauksesta raportti
+
 Alla nettisivujen sisällön hahmottelua
 
 ### Etusivut:
@@ -8,8 +14,6 @@ Alla nettisivujen sisällön hahmottelua
 - esittely teksti
 - tabs-osio: palvelut on peruskurssi, harraste ja kilpailu.
 - henkilöiden esittely
-- muokata sivua css ja hyödyntää bootstrap.
-- testauksesta raportti
 
 ### Ilmottautuminen:
 - lomake: etunimi, sukunimi, sähköposti, koulutalo,ilmoittautumisvalikko ja viestikenttä(perskurssi,harraste tai kilpailu)
