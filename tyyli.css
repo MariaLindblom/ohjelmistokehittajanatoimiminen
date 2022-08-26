@@ -34,7 +34,7 @@
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 100px) {
   .header a {
     float: none;
     display: block;
@@ -52,7 +52,7 @@ body, html {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2273/sport-tennis-old-net.jpg?auto=compress&cs=tinysrgb&w=1600");
 
-  height: 40%;
+  height: 70%;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -100,14 +100,28 @@ body, html {
   border-top: none;
 }
 
-.float-container {
-  border: 3px solid #fff;
-  padding: 20px;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
 }
 
-.float-child {
-  width: 50%;
-  float: center;
-  padding: 20px;
-  border: 2px solid rgb(109, 28, 112);
-}  
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(89, 75, 219);
+  color: white;
+  width: 100%;
+}
