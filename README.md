@@ -15,7 +15,7 @@ Alla nettisivujen sisällön hahmottelua
 - tabs-osio: palvelut on peruskurssi, harraste ja kilpailu.
 - henkilöiden esittely
 
-### Ilmottautuminen:
+### Ilmoittautuminen:
 - lomake: etunimi, sukunimi, sähköposti, koulutalo,ilmoittautumisvalikko ja viestikenttä(perskurssi,harraste tai kilpailu)
 - tallentuu palvelimelle php:n avulla
 
