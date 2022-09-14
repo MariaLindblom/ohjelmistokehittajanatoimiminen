@@ -15,9 +15,10 @@
   border-radius: 4px;
 }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+
+
+.header img {
+  height: 100px;
 }
 
 .header a:hover {
@@ -34,7 +35,7 @@
   float: right;
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 30px) {
   .header a {
     float: none;
     display: block;
@@ -100,12 +101,30 @@ body, html {
   border-top: none;
 }
 
-.card {
+.card1 {
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+  width: 200px;
   text-align: center;
+  margin: auto;
 }
+
+.card2 {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+  margin: auto;
+}
+
+.card3 {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+  margin: auto;
+}
+
 
 .title {
   color: grey;
