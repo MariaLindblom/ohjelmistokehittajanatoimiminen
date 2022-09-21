@@ -1,7 +1,7 @@
 <html>
   <link rel="stylesheet" href="../tyylit/tyyli.css">
   <link rel="stylesheet" href="../tyylit/ilmoittuminentyylit.css">
-  <script src="javakoodit.js"></script>
+  <script src="../javakoodit.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -22,7 +22,7 @@
     <h1>Ilmoittautumislomake</h1>
   </div>
   <div>
-  <form action="/ilmoittautumiset.php">
+  <form action="../tietokannat/ilmoittautumiset.php">
     <label for="enimi">Etunimi:</label><br>
     <input type="text" id="enimi"><br>
     <label for="snimi">Sukunimi:</label><br>
@@ -32,7 +32,7 @@
     <label for="koulu">Koulutalo:</label><br>
     <input type="text" id="koulu"><br><br>
     <!-- valikko tässä -->
-    <label for="kurssit">Valitse kurssi:</label>
+    <label for="kurssit">Valitse kurssi:</label><br>
     <select name="kurssit" id="kurssit">
         <option value="peruskurssi">Peruskurssi</option>
         <option value="harrastejaosto">Harrastejaosto</option>
