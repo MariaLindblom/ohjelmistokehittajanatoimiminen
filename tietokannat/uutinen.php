@@ -8,6 +8,16 @@ class Uutinen {
 
         return $query->fetchAll();
     }
+
+    public function fetch_data($uutisen_id) {
+        global $pdo;
+
+        $query = $pdo->prepare("SELECT * FROM uutiset WHERE uutisen_id = ?");
+        $query->bindValue(1, $uutisen_id);
+        $query->execute();
+
+        return $query->fetch();
+    }
 }
 
 ?>

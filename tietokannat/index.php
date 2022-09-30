@@ -2,10 +2,13 @@
 include_once('yhteys.php');
 include_once('uutinen.php');
 
+//echo time();
+
 $uutinen = new Uutinen;
 $uutiset = $uutinen->fetch_all();
 
 print_r($uutiset);
+
 ?>
 
 <html>
@@ -14,7 +17,7 @@ print_r($uutiset);
     </head>
     <body>
         <div class="container">
-            <a href="index.php">testi</a>
+            <a href="index.php" id="logo">Uutis-sivu</a>
             <ol>
                 <?php foreach ($uutiset as $uutinen) { ?>
                     <li>
