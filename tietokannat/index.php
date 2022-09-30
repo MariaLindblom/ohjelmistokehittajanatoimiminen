@@ -1,13 +1,11 @@
 <?php
 include_once('yhteys.php');
-include_once('article.php');
+include_once('uutinen.php');
 
-echo time();
+$uutinen = new Uutinen;
+$uutiset = $uutinen->fetch_all();
 
-$article = new Article;
-$articles = $article->fetch_all();
-
-print_r($articles);
+print_r($uutiset);
 ?>
 
 <html>
@@ -18,13 +16,13 @@ print_r($articles);
         <div class="container">
             <a href="index.php">testi</a>
             <ol>
-                <?php foreach ($articles as $article) { ?>
+                <?php foreach ($uutiset as $uutinen) { ?>
                     <li>
-                        <a href="article.php?id=<?php echo $article['article_id']; ?>">
-                            <?php echo $article['article_title']; ?>
+                        <a href="uutinen.php?id=<?php echo $uutinen['uutisen_id']; ?>">
+                            <?php echo $uutinen['uutisen_otsikko']; ?>
                         </a>
                         - <small>
-                            julkaistu <?php echo date('l jS', $article['article_timestamp']); ?>
+                            julkaistu <?php echo date('l jS', $uutinen['uutisen_julkaisuaika']); ?>
                         </small>
                     </li>
                 <?php } ?>
