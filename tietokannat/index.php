@@ -1,6 +1,6 @@
 <?php
 include_once('yhteys.php');
-include_once('uutinen.php');
+include_once('sisaltaa/uutinen.php');
 
 //echo time();
 

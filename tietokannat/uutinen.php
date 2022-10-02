@@ -1,23 +1,37 @@
 <?php
-class Uutinen {
-    public function fetch_all() {
-        global $pdo;
+include_once('yhteys.php');
+include_once('sisaltaa/uutinen.php');
 
-        $query = $pdo->prepare("SELECT * FROM 20n_1900.uutiset");
-        $query->execute();
+$uutinen = new Uutinen;
 
-        return $query->fetchAll();
-    }
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $data = $uutinen->fetch_data($id);
 
-    public function fetch_data($uutisen_id) {
-        global $pdo;
+    //print_r($data);
+    ?>
+    <html>
+        <head>
+            <title>Uutiset</title>
+        </head>
+        <body>
+            <div class="container">
+                <a href="index.php" id="logo">Uutis-sivu</a>
+                <h4>
+                    <?php echo $data['uutisen_otsikko']; ?> -
+                    <small>
+                        julkaistu <?php echo date('l jS', $data['uutisen_julkaisuaika']); ?>
+                    </small>
+                </h4>
+                <p><?php echo $data['uutisen_sisalto']; ?></p>
+            </div>
+        </body>
+    </html>
 
-        $query = $pdo->prepare("SELECT * FROM uutiset WHERE uutisen_id = ?");
-        $query->bindValue(1, $uutisen_id);
-        $query->execute();
-
-        return $query->fetch();
-    }
+    <?php
+} else {
+    header('Location: index.php');
+    exit();
 }
 
 ?>
