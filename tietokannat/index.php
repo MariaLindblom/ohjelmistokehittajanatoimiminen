@@ -7,13 +7,14 @@ include_once('uutinen.php');
 $uutinen = new Uutinen;
 $uutiset = $uutinen->fetch_all();
 
-print_r($uutiset);
+//print_r($uutiset);
 
 ?>
 
 <html>
     <head>
         <title>Uutiset</title>
+        <link rel="stylesheet" href="../tyylit/uutistentyyli.css" />
     </head>
     <body>
         <div class="container">
