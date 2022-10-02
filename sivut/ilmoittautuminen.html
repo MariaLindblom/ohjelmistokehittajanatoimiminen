@@ -22,24 +22,24 @@
     <h1>Ilmoittautumislomake</h1>
   </div>
   <div>
-  <form action="../tietokannat/ilmoittautumiset.php">
+  <form action="../tietokannat/ilmoittautumiset.php" method="post">
     <label for="enimi">Etunimi:</label><br>
-    <input type="text" id="enimi"><br>
+    <input type="text" id="enimi" name="enimi"><br>
     <label for="snimi">Sukunimi:</label><br>
-    <input type="text" id="snimi"><br>
+    <input type="text" id="snimi" name="snimi"><br>
     <label for="sposti">Sähköposti:</label><br>
-    <input type="text" id="sposti"><br>
+    <input type="text" id="sposti" name="sposti"><br>
     <label for="koulu">Koulutalo:</label><br>
-    <input type="text" id="koulu"><br><br>
+    <input type="text" id="koulu" name="koulu"><br><br>
     <!-- valikko tässä -->
     <label for="kurssit">Valitse kurssi:</label><br>
-    <select name="kurssit" id="kurssit">
+    <select name="kurssit" id="kurssit" name="kurssit">
         <option value="peruskurssi">Peruskurssi</option>
         <option value="harrastejaosto">Harrastejaosto</option>
         <option value="kilpajaosto">Kilpajaosto</option>
     </select><br><br>
     <label for="viesti">Viestisi:</label><br>
-    <input type="text" id="viesti"><br><br>
+    <input type="text" id="viesti" name="viesti"><br><br>
     <input type="submit" value="Lähetä">
   </form>
   </div>
